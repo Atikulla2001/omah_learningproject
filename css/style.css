@@ -1,0 +1,660 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================== header end ========================= */
+
+header{
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+.container{
+    width: 1166px;
+    margin: 0 auto;
+}
+
+header nav .mother{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 100px;
+}
+
+header nav ul li{
+    list-style: none;
+    position: relative;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.4s;
+}
+
+header nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px ;
+    background: #F6762E;
+    position: absolute;
+    bottom:-5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+header nav ul li a:hover::after{
+    width: 50%;
+}
+
+header nav ul li:hover a{
+    font-weight: 600;
+}
+
+
+header nav ul li .active::after{
+    content: "";
+    width: 50%;
+    height: 2px ;
+    background: #F6762E;
+    position: absolute;
+    bottom:-5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+
+
+header nav ul li .active{
+    font-weight: 600;
+}
+/* ===================================== header end ========================= */
+
+
+
+
+
+/* ==================================== banner start ========================== */
+
+#banner{
+    background-color:  #EEEDDE;
+    padding-top: 188px;  
+    padding-bottom: 120px;
+}
+
+#banner .mother{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+#banner .left{
+    width: 65%;
+    
+}
+
+
+#banner .right{
+    width: 35%; 
+    display: flex;
+    justify-content: end;
+   
+}
+
+
+#banner .left h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #203239;
+    width: 790px;
+    font-family: "Poppins", sans-serif;
+}
+
+#banner .left p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: rgba(32, 50, 57, .55 );
+    font-family: "Poppins", sans-serif;
+    width: 544px;
+    margin-top: 24px;
+}
+
+
+#banner .left input{
+    width: 508px;
+    height: 70px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    border: none;
+    padding-left: 56px ;
+   
+}
+
+#banner .left input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: rgba(32, 50, 57, .55 );
+    font-family: "Poppins", sans-serif;
+}
+
+#banner .locationicon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.inputbox{
+    position: relative;
+    margin-top: 55px;
+}
+
+
+#banner .inputbox button{
+    width: 138px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: rgba(32, 50, 57, .55 );
+    font-family: "Poppins", sans-serif;
+    margin-left: 15px;
+}
+
+/* ===================================== banner end ============================ */
+
+
+
+
+
+
+/* ================================== tahapan start ==================================== */
+
+#tahapan{
+  padding: 100px 0;
+}
+
+
+#tahapan h2{
+    width: 533px;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #203239;
+    margin-bottom: 62px;
+    
+}
+
+#tahapan .item{
+    width:300px;
+    border-radius: 10px;
+    transition: .4s;
+    background: #FFFFFF;
+    padding: 20px 32px;
+    position: relative;
+}
+
+#tahapan .item:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+}
+
+#tahapan .item::after{
+    content: "";
+    width: 8px;
+    height: 30px;
+    border-radius: 6px;
+    background: #FF7527;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 5px;
+    top: 0;
+    left: 0;
+}
+
+
+#tahapan .mother{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+#tahapan .item h4{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    
+}
+
+#tahapan .item h5{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #FF7527;
+    
+}
+
+#tahapan .item p{
+    width: 232px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 8px;
+    color: rgba(32, 50, 57, 55%);
+}
+
+#tahapan .item a{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#tahapan .item a .icon{
+    margin-left: 8px;
+}
+
+/* ================================== tahapan  End ==================================== */
+
+
+
+
+
+
+/* ===================================== Residen Start ================================ */
+
+#residen{
+    background: #EEEDDE;
+    padding-top: 68px;
+    padding-bottom: 163px;
+}
+
+#residen h5{
+    width: 144px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #FF7527;
+}
+
+
+#residen h3{
+    width: 300px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 150%;
+    color: #203239;
+    margin-bottom: 64px;
+}
+
+#residen .residen_mother{
+    display: flex;
+    align-items: center;
+}
+
+#residen .residen_mother .image_left{
+    width: 50%;
+    position: relative;
+    
+}
+
+#residen .residen_mother .imagetow{
+    position: absolute;
+    top: 60px;
+    left: 167px;
+}
+
+
+#residen .residen_mother .text_right{
+    width: 50%;
+    margin-top: -40px;
+    
+}
+
+
+
+#residen .residen_mother .text_right h2{
+    width: 507px;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 150%;
+    color: #203239;
+}
+
+#residen .residen_mother .text_right p{
+    width: 570px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+    color: #203239;
+    margin-top: 24px;
+}
+
+
+#residen .residen_mother .text_right button{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background: #EEEDDE;
+    color: #203239;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 41px;
+    transition: .4s;
+    border: 1px solid  #203239;
+    margin-top: 48px;
+    position: relative;
+}
+
+
+#residen .residen_mother .text_right button:hover{
+    background: #203239;
+    border: 1px solid #203239;
+    color: #FFFFFF;
+    
+}
+
+#residen .residen_mother .phoneicon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    
+}
+
+#residen .residen_mother .text_right .btntow{
+    margin-left: 48px;
+}
+
+/* ====================================  Residen End  ==================================== */
+
+
+
+
+
+
+
+/* ================================== three picture Start ================================ */
+#picture{
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+
+#picture h5{
+    width: 117px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #FF7527;
+}
+
+#picture h3{
+    width: 428px;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    line-height: 150%;
+    margin-bottom: 64px;
+    margin-top: 8px;
+}
+
+#picture .picture_mother{
+    display: flex;
+    justify-content: space-between;
+}
+
+#picture .picture_mother .tow{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#picture h4{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    line-height: 150%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#picture p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    line-height: 30px; 
+}
+
+/* ================================== three picture End ================================ */
+
+
+#footertop{
+    background: #EEEDDE;
+}
+
+
+footer #footertop .mother{
+    display: flex;
+}
+
+footer #footertop .mother .towdisplay{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #footertop .left_part{
+    width: 50%;
+}
+
+footer #footertop .right_part{
+    width: 50%;
+    text-align: center;
+}
+
+footer #footertop .mother .left_part h2{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    line-height: 150%; 
+    padding-top: 48px;
+}
+
+
+footer #footertop .mother .cleft{
+    width: 274px;
+    background: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 74px;
+    margin-bottom: 48px;
+}
+
+footer #footertop .mother .cleft .callicon{
+    width: 34px;
+    height: 33px;
+    color: #203239;
+    position: absolute;
+    top: 36px;
+    left: 41px;
+}
+
+
+footer #footertop .mother .cleft h5{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    margin-left: 104px;
+    margin-bottom: 8px;
+    padding-top: 25px;
+}
+
+footer #footertop .mother .cleft a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    text-decoration: none;
+    margin-left: 98px;
+    margin-top: 8px;
+}
+
+footer #footertop .mother .cleft button{
+    padding: 10px 18px;
+    background: #203239;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 15px;
+    margin-left: 83px;
+}
+
+
+footer #footertop .mother .cright{
+    width: 274px;
+    background: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 74px;
+    margin-bottom: 48px;
+}
+
+footer #footertop .mother .cright .callicon{
+    width: 34px;
+    height: 33px;
+    color: #203239;
+    position: absolute;
+    top: 36px;
+    left: 41px;
+}
+
+
+footer #footertop .mother .cright h5{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    margin-left: 104px;
+    margin-bottom: 8px;
+    padding-top: 25px;
+}
+
+footer #footertop .mother .cright a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    text-decoration: none;
+    margin-left: 98px;
+    margin-top: 8px;
+}
+
+footer #footertop .mother .cright button{
+    padding: 10px 18px;
+    background: #203239;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 15px;
+    margin-left: 83px;
+}
+
+
+footer #footertop .mother .right_part h2{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #203239;
+    line-height: 150%;
+    padding-top: 93px;
+    margin-left: 138px;
+    margin-bottom: 69px;
+}
+
+footer #footertop .mother .right_part img{
+    margin-left: 130px;
+}
+
+
+footer #footerend ul{
+    display: flex;
+    gap: 64px;
+    
+}
+
+
+footer #footerend ul li{
+    list-style: none;
+    
+}
+
+footer #footerend ul li a{
+   text-decoration: none;  
+   color: #EEEDDE;
+   font-size: 18px;
+}
+
+footer #footerend .fendmother{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #footerend{
+    background: #203239;
+    padding: 31px 0;
+}
+
+
+
+
+
+
+
+
+
+
